@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TK Coaching | Empowering Growth</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function subscribeEmail(event) {
+      event.preventDefault();
+      const email = document.getElementById("subscriberEmail").value;
+      if(email) {
+        alert("Thank you for subscribing: " + email);
+        document.getElementById("subscriberEmail").value = "";
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">TK Coaching</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
+        <a href="#ydm" class="text-gray-700 hover:text-blue-600">Youth</a>
+        <a href="#corporate" class="text-gray-700 hover:text-blue-600">Corporate</a>
+        <a href="#private" class="text-gray-700 hover:text-blue-600">Private Coaching</a>
+        <a href="#blog" class="text-gray-700 hover:text-blue-600">Blog</a>
+        <a href="#podcast" class="text-gray-700 hover:text-blue-600">Podcast</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Image -->
+  <section class="bg-blue-50 py-16 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-4">TK Coaching: Empowering Holistic Growth</h2>
+      <p class="text-lg mb-6">Helping individuals and organizations thrive through youth development, corporate wellness, and personalized coaching.</p>
+      <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642" alt="Boxing Training" class="mx-auto rounded-lg shadow-lg mb-6 max-h-96 w-full object-cover">
+      <a href="#about" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700">Learn More</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-12 px-4 max-w-5xl mx-auto">
+    <h3 class="text-3xl font-bold mb-4">About TK Coaching</h3>
+    <p class="text-lg">TK Coaching offers transformational development through three core services:</p>
+    <ul class="list-disc pl-5 mt-4">
+      <li><strong>Youth Development Programs:</strong> Empowering ages 15–25 with physical, mental, emotional, and spiritual growth.</li>
+      <li><strong>Corporate Wellness:</strong> Enhancing employee well-being, performance, and resilience.</li>
+      <li><strong>Private Coaching:</strong> One-on-one and small group coaching for personalized development goals.</li>
+    </ul>
+  </section>
+
+  <!-- Visual Sections with Vimeo Embeds -->
+  <section class="py-12 px-4 max-w-5xl mx-auto">
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-4 rounded shadow text-center">
+        <h4 class="text-xl font-bold mb-2">Youth Development</h4>
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe src="https://player.vimeo.com/video/yourYouthVideoID" width="100%" height="240" frameborder="0" allowfullscreen class="w-full rounded mb-2"></iframe>
+        </div>
+        <p>Guiding youth with structured programs focused on holistic growth and life skills.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow text-center">
+        <h4 class="text-xl font-bold mb-2">Corporate Wellness</h4>
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe src="https://player.vimeo.com/video/yourCorporateVideoID" width="100%" height="240" frameborder="0" allowfullscreen class="w-full rounded mb-2"></iframe>
+        </div>
+        <p>Workshops and sessions designed to foster productivity and well-being in the workplace.</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow text-center">
+        <h4 class="text-xl font-bold mb-2">Private Coaching</h4>
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe src="https://player.vimeo.com/video/yourPrivateVideoID" width="100%" height="240" frameborder="0" allowfullscreen class="w-full rounded mb-2"></iframe>
+        </div>
+        <p>Tailored 1-on-1 or group coaching for personal development and physical fitness.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
